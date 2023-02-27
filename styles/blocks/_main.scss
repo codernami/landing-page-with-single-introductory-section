@@ -1,0 +1,109 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+
+    @media screen and (min-width: 992px) {
+        flex-direction: row;
+        margin: 1.5rem;
+    } 
+    @media screen and (min-width: 1440px) {
+        margin-top: 3.5rem;
+    }
+}
+
+.main__img {
+    padding: .3rem 1rem;
+
+    @media screen and (min-width: 992px) {
+        width: 60%;
+        margin-top: 1.5rem;
+    }
+}
+
+.info {
+    color: $white;
+    max-width: 88%;
+    text-align: center;
+
+    @media screen and (min-width: 992px) {
+        width: 40%;
+        text-align: left;
+        padding-left: 13px;
+    }
+}
+
+.info__title {
+    font-family: $title-font;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 3.5rem;
+
+    @media screen and (min-width: 768px) {
+        font-size: 2.1rem;
+        margin-top: 0;
+    }
+
+    @media screen and (min-width: 992px) {
+        text-align: left;
+        font-size: 2.5rem;
+    }
+    @media screen and (min-width: 1440px) {
+        text-align: left;
+        font-size: 2.7rem;
+    }
+}
+
+
+.info__text {
+    font-family: $text-font;
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: center;
+    padding-top: 13px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 1.2rem;
+        padding-left: 5px;
+    }
+
+    @media screen and (min-width: 992px) {
+        text-align: left;
+    }    
+    @media screen and (min-width: 1440px) {
+        font-size: 1.18rem;
+    }    
+}
+
+.info__button {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-family: $title-font;
+    font-size: 14px;
+    font-weight: 400;
+    color: $violet;
+    background-color: $bg-button;
+    padding: 12px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    width: 185px;
+    height: 40px;
+    border-radius: 25px;  
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+
+    @media screen and (min-width: 992px) {
+        margin-left: 0;
+        padding-top: 1rem;
+        padding-bottom: 1.8rem;
+
+        &:hover {
+            background-color: #da3bbf;
+            color: $white;
+            border: 1px solid gray;
+        }
+    }
+}
